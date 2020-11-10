@@ -1,16 +1,19 @@
-import helixService from './helixService';
-import HelixBaseApi from './helixBaseApi';
+import HelixService from "./helixService";
+import HelixBaseApi from "./helixBaseApi";
+import HelixGrimoire from "./helixGrimoire";
+import HelixMemoriz from "./helixMemoriz";
+import HelixElixir from "./helixElixir";
+import helixFormatter from "./helixFormatter";
+import HelixUserstore from "./helixUserstore";
+import HelixWowTracker from "./helixWowTracker";
 
-/*
-module.exports = {
-    ...require('./helixElixir'),
-    ...require('./helixFormatter'),
-    ...require('./helixGrimoire'),
-    ...require('./helixMemorizStore'),
-    ...require('./helixBaseApi'),
-    ...require('./helixService'),
-    ...require('./helixUserstore'),
-    ...require('./helixWowTracker'),
-};*/
-
-export {HelixBaseApi, helixService};
+export {
+	HelixBaseApi,
+	HelixService,
+	HelixGrimoire,
+	HelixMemoriz,
+	HelixElixir,
+	helixFormatter,
+	HelixUserstore,
+	HelixWowTracker,
+};

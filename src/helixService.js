@@ -1,4 +1,5 @@
 var ID_ACCESS_TOKEN;
+var API_ACCESS_TOKEN = "1234567890-ABCDEFGH";
 
 
 const HelixService = {
@@ -13,6 +14,7 @@ const HelixService = {
 			headers: {
 				Accept: "application/json",
 				"Content-Type": "application/json",
+				"x-api-key": API_ACCESS_TOKEN
 			}
 		})
 			.then(this.validateResponse)
@@ -33,7 +35,7 @@ const HelixService = {
 			headers: {
 				Accept: "application/json",
 				"Content-Type": "application/json",
-
+				"x-api-key": API_ACCESS_TOKEN,
 				Authorization: "Bearer " + ID_ACCESS_TOKEN
 			}
 		})
@@ -53,6 +55,7 @@ const HelixService = {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
+				"x-api-key": API_ACCESS_TOKEN
 			},
 			body: json
 		})
@@ -73,6 +76,7 @@ const HelixService = {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
+				"x-api-key": API_ACCESS_TOKEN,
 				Authorization: "Bearer " + ID_ACCESS_TOKEN
 			},
 			body: json
@@ -92,7 +96,8 @@ const HelixService = {
 		return fetch(url, {
 			method: "PUT",
 			headers: {
-				"Content-Type": "application/json",EN
+				"Content-Type": "application/json",
+				"x-api-key": API_ACCESS_TOKEN
 			},
 			body: json
 		})
@@ -113,6 +118,7 @@ const HelixService = {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
+				"x-api-key": API_ACCESS_TOKEN,
 				Authorization: "Bearer " + ID_ACCESS_TOKEN
 			},
 			body: json
@@ -135,6 +141,7 @@ const HelixService = {
 				method: "DELETE",
 				headers: {
 					"Content-Type": "application/json",
+					"x-api-key": API_ACCESS_TOKEN,
 					Authorization: "Bearer " + ID_ACCESS_TOKEN
 				}
 			})
