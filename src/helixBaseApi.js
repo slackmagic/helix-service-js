@@ -10,6 +10,10 @@ const HelixBaseApi = {
 
 	version(callback) {
 		return HelixService.get(VERSION, callback);
+	},
+
+	helloworld() {
+		return "Hello World";
 	}
 };
 
