@@ -1,11 +1,10 @@
 module.exports = {
-    ...require('./helixService'),
     ...require('./helixBaseApi'),
     ...require('./helixElixir'),
-    ...require('./helixElixir'),
-    ...require('./helixInteractor'),
-    ...require('./helixUserstore'),
     ...require('./helixFormatter'),
+    ...require('./helixGrimoire'),
     ...require('./helixMemorizStore'),
+    ...require('./helixService'),
+    ...require('./helixUserstore'),
     ...require('./helixWowTracker'),
 };
