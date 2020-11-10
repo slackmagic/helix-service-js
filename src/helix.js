@@ -1,3 +1,7 @@
+import helixService from './helixService';
+import HelixBaseApi from './helixBaseApi';
+
+/*
 module.exports = {
     ...require('./helixElixir'),
     ...require('./helixFormatter'),
@@ -7,4 +11,6 @@ module.exports = {
     ...require('./helixService'),
     ...require('./helixUserstore'),
     ...require('./helixWowTracker'),
-};
+};*/
+
+export {HelixBaseApi, helixService};
